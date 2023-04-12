@@ -11,7 +11,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 
 /**
  * Application
- * @author ThinkGem
+ * @author yosaa
  * @version 2018-10-13
  */
 @SpringBootApplication

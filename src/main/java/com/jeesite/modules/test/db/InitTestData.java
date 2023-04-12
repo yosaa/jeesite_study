@@ -18,7 +18,7 @@ import com.jeesite.modules.gen.utils.GenUtils;
 
 /**
  * 初始化核心表数据
- * @author ThinkGem
+ * @author yosaa
  * @version 2020-5-26
  */
 @Component

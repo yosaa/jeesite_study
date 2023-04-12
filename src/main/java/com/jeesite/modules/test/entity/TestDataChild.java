@@ -19,7 +19,7 @@ import com.jeesite.common.mybatis.mapper.query.QueryType;
 
 /**
  * 测试数据Entity
- * @author ThinkGem
+ * @author yosaa
  * @version 2018-04-22
  */
 @Table(name="test_data_child", alias="a", columns={

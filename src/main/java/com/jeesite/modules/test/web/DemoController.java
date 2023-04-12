@@ -19,7 +19,7 @@ import com.jeesite.modules.test.service.TestDataService;
 
 /**
  * 演示实例Controller
- * @author ThinkGem
+ * @author yosaa
  * @version 2018-03-24
  */
 @Controller

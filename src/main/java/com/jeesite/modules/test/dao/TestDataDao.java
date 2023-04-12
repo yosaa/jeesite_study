@@ -13,7 +13,7 @@ import com.jeesite.modules.test.entity.TestData;
 
 /**
  * 测试数据DAO接口
- * @author ThinkGem
+ * @author yosaa
  * @version 2018-04-22
  */
 @MyBatisDao

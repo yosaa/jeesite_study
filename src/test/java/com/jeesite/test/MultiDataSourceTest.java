@@ -27,7 +27,7 @@ import com.jeesite.modules.test.service.TestDataService;
  * 1、将 TestDataChildDao 的数据源设置为 ds2<br>
  * 2、将 TestDataChild 的表名设置为 test_data_child2<br>
  * 3、配置 ds2 数据源，并创建 test_data_child2 表
- * @author ThinkGem
+ * @author yosaa
  * @version 2019-6-26
  */
 @ActiveProfiles("test")

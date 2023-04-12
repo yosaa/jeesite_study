@@ -2,7 +2,7 @@ package com.jeesite.modules.wms.config;
 
 
 /**
- * @author cy
+ * @author yosaa
  */
 public interface ResultConstants {
 

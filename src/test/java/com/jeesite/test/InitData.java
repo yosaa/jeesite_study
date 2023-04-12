@@ -13,7 +13,7 @@ import com.jeesite.modules.Application;
 
 /**
  * 初始化数据表
- * @author ThinkGem
+ * @author yosaa
  * @version 2020-5-26
  */
 @ActiveProfiles("test")

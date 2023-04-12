@@ -10,7 +10,7 @@ import com.jeesite.modules.test.entity.TestTree;
 
 /**
  * 测试树表DAO接口
- * @author ThinkGem
+ * @author yosaa
  * @version 2018-04-22
  */
 @MyBatisDao

@@ -18,7 +18,7 @@ import java.util.List;
 
 /**
  * 批量插入测试
- * @author ThinkGem
+ * @author yosaa
  * @version 2019年10月28日
  */
 @ActiveProfiles("test")
