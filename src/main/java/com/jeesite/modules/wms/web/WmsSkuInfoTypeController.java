@@ -1,6 +1,8 @@
 package com.jeesite.modules.wms.web;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Objects;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -9,6 +11,7 @@ import com.alibaba.fastjson.JSON;
 import com.jeesite.modules.wms.config.Result;
 import com.jeesite.modules.wms.util.RedisUtil;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -37,6 +40,8 @@ public class WmsSkuInfoTypeController extends BaseController {
 	private WmsSkuInfoTypeService wmsSkuInfoTypeService;
 	@Autowired
 	private RedisUtil redisUtil;
+	@Autowired
+	RabbitTemplate rabbitTemplate;
 
 	/**
 	 * 获取数据
@@ -130,7 +135,6 @@ public class WmsSkuInfoTypeController extends BaseController {
 		String val = "{'name': 'helloworlda','array':[{'a':'111','b':'222','c':'333'},{'a':'999'}],'address':'111','people':{'name':'happ','sex':'girl'}}";
 		if(type == 1){
 			Object value = redisUtil.get(key);
-
 			return Result.ok(value);
 		}else if(type == 2){
 			redisUtil.set(key, val,5);
@@ -139,4 +143,34 @@ public class WmsSkuInfoTypeController extends BaseController {
 		return Result.failed("error");
 	}
 
+	@RequestMapping(value = "rabbitMQ")
+	@ResponseBody
+	public Result<?> rabbitMQ(String key , int type) {
+		Map<String,Object> map=new HashMap<>();
+		map.put("yosaa",123);
+		if(type == 1){
+			//将消息携带绑定键值：TestDirectRouting 发送到交换机TestDirectExchange
+			rabbitTemplate.convertAndSend("TestDirectExchange", "TestDirectRouting", map);
+			return Result.ok("success");
+		}else if(type == 2){
+
+			return Result.ok("success！");
+		}
+		return Result.failed("error");
+	}
+
+	@RequestMapping(value = "neo4j")
+	@ResponseBody
+	public Result<?> neo4j(String key , int type) {
+
+		if(type == 1){
+
+
+
+		}else if(type == 2){
+
+			return Result.ok("success！");
+		}
+		return Result.failed("error");
+	}
 }
