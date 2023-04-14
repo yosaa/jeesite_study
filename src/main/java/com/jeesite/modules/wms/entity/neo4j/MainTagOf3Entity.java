@@ -1,6 +1,5 @@
 package com.jeesite.modules.wms.entity.neo4j;
 
-import com.jeesite.modules.wms.entity.neo4j.test.Roles;
 import lombok.Data;
 import org.springframework.data.neo4j.core.schema.GeneratedValue;
 import org.springframework.data.neo4j.core.schema.Id;
