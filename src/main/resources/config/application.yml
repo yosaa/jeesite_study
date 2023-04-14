@@ -278,6 +278,9 @@ spring:
     authentication:
       username: neo4j
       password: 123456789
+  data:
+    neo4j:
+      database: demo
 
   # Redis 连接参数 （RedisProperties）
   redis:
@@ -287,6 +290,7 @@ spring:
     database: 0
     password:
     timeout: 20000
+
 #    lettuce:
 #      pool:
 #        # 最大空闲连接数

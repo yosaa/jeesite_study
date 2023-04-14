@@ -66,11 +66,17 @@
 		</dependency>
 
 		<!-- Neo4j依赖 -->
+		<!--neo4j driver-->
 		<dependency>
 			<groupId>org.neo4j.driver</groupId>
 			<artifactId>neo4j-java-driver</artifactId>
-			<version>4.2.0</version>
 		</dependency>
+		<!-- neo4j 操作实体注解需要 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-neo4j</artifactId>
+		</dependency>
+
 
 		<!-- Neo4j依赖 -->
 		<!--		&lt;!&ndash; 移动端模块 &ndash;&gt;-->
