@@ -282,6 +282,9 @@ spring:
     neo4j:
       database: demo
 
+    mongodb:
+        uri: mongodb://youce:123456@192.168.3.21:27017/information
+
   # Redis 连接参数 （RedisProperties）
   redis:
     host: 127.0.0.1
